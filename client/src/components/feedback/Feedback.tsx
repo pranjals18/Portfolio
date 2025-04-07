@@ -21,7 +21,7 @@ const Feedback = () => {
     setLoading(true);
     
     try {
-      const response = await fetch("http://localhost:5000/testimonials", {
+      const response = await fetch("https://portfolio-o8ve.onrender.com/testimonials", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, text: feedback }),

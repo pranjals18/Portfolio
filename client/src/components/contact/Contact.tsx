@@ -26,7 +26,7 @@
 //     setLoading(true);
 
 //     try {
-//       const response = await fetch("http://localhost:5000/messages", {
+//       const response = await fetch("https://portfolio-o8ve.onrender.com/messages", {
 //         method: "POST",
 //         headers: { "Content-Type": "application/json" },
 //         body: JSON.stringify({ name: firstName, email, message }),
@@ -172,7 +172,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/messages", {
+      const response = await fetch("https://portfolio-o8ve.onrender.com/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: firstName, email, message }),

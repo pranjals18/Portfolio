@@ -12,7 +12,7 @@
 //   const [view, setView] = useState<"approved" | "pending">("pending");
 
 //   useEffect(() => {
-//     fetch("http://localhost:5000/testimonials")
+//     fetch("https://portfolio-o8ve.onrender.com/testimonials")
 //       .then((res) => res.json())
 //       .then((data: Testimonial[]) => {
 //         // Sort testimonials by newest first
@@ -25,7 +25,7 @@
 //   }, []);
 
 //   const toggleApproval = (id: string) => {
-//     fetch(`http://localhost:5000/testimonials/${id}`, {
+//     fetch(`https://portfolio-o8ve.onrender.com/testimonials/${id}`, {
 //       method: "PUT",
 //       headers: { "Content-Type": "application/json" },
 //     })
@@ -114,7 +114,7 @@ const AdminTestimonials = () => {
   const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
-    fetch("http://localhost:5000/testimonials")
+    fetch("https://portfolio-o8ve.onrender.com/testimonials")
       .then((res) => res.json())
       .then((data: Testimonial[]) => {
         const sortedTestimonials = data.sort(
@@ -128,7 +128,7 @@ const AdminTestimonials = () => {
   }, []);
 
   const toggleApproval = (id: string, approved: boolean) => {
-    fetch(`http://localhost:5000/testimonials/${id}`, {
+    fetch(`https://portfolio-o8ve.onrender.com/testimonials/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
     })

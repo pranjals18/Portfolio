@@ -26,7 +26,7 @@
 //   const navigate = useNavigate();
 
 //   useEffect(() => {
-//     fetch("http://localhost:5000/testimonials")
+//     fetch("https://portfolio-o8ve.onrender.com/testimonials")
 //       .then((res) => res.json())
 //       .then((data: Testimonial[]) => {
 //         const approvedTestimonials = data.filter((t) => t.approved);
@@ -226,7 +226,7 @@
 //   const navigate = useNavigate();
 
 //   useEffect(() => {
-//     fetch("http://localhost:5000/testimonials")
+//     fetch("https://portfolio-o8ve.onrender.com/testimonials")
 //       .then((res) => res.json())
 //       .then((data: Testimonial[]) => {
 //         const approvedTestimonials = data.filter((t) => t.approved);
@@ -410,7 +410,7 @@
 //   const navigate = useNavigate();
 
 //   useEffect(() => {
-//     fetch("http://localhost:5000/testimonials")
+//     fetch("https://portfolio-o8ve.onrender.com/testimonials")
 //       .then((res) => res.json())
 //       .then((data: Testimonial[]) => {
 //         const approvedTestimonials = data.filter((t) => t.approved);
@@ -591,7 +591,7 @@ const Testimonials = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/testimonials")
+    fetch("https://portfolio-o8ve.onrender.com/testimonials")
       .then((res) => res.json())
       .then((data: Testimonial[]) => {
         const approvedTestimonials = data.filter((t) => t.approved);
