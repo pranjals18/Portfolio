@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const Message = require("../models/Messages");
 
-// ✅ 1. Submit a new message
 router.post("/", async (req, res) => {
   try {
     const { name, email, message } = req.body;
@@ -20,7 +19,6 @@ router.post("/", async (req, res) => {
   }
 });
 
-// ✅ 2. Retrieve all messages
 router.get("/", async (req, res) => {
   try {
     const messages = await Message.find();

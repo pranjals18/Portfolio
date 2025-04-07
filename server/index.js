@@ -26,5 +26,5 @@ app.use(errorHandler);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-// Ping every 10 minutes no matter what
+
 setInterval(pingServer, 10 * 60 * 1000);

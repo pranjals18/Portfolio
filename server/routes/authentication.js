@@ -40,7 +40,7 @@ router.post("/login", async (req, res) => {
   res.json({ token });
 });
 
-// Middleware to verify token
+
 const verifyToken = (req, res, next) => {
   const authHeader = req.headers["authorization"];
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
@@ -59,7 +59,7 @@ const verifyToken = (req, res, next) => {
   }
 };
 
-// Protected Route Example
+
 router.get("/admin/dashboard", verifyToken, (req, res) => {
   res.json({ message: "Welcome to Admin Dashboard" });
 });
