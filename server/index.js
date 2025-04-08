@@ -15,6 +15,7 @@ const db = require('./config/db.js');
 
 app.get("/ping", (req, res) => {
   res.status(200).send("pong");
+  console.log("Keeping the setver active")
 });
 
 app.use("/testimonials", testimonialRoutes);
