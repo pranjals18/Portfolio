@@ -2,7 +2,10 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
-
+import image_1 from "../../assets/pexels-anete-lusina-5240548.jpg";
+import image_2 from "../../assets/pexels-nemuel-6424587.jpg";
+import image_3 from "../../assets/pexels-storybyphil-3335697.jpg";
+import image_4 from "../../assets/pexels-tima-miroshnichenko-5380590.jpg";
 
 interface Testimonial {
   _id: string;
@@ -12,10 +15,10 @@ interface Testimonial {
 }
 
 const images = [
-  "https://images.pexels.com/photos/5380590/pexels-photo-5380590.jpeg",
-  "https://images.pexels.com/photos/2047914/pexels-photo-2047914.jpeg",
-  "https://images.pexels.com/photos/3335697/pexels-photo-3335697.jpeg",
-  "https://images.pexels.com/photos/5827821/pexels-photo-5827821.jpeg",
+  image_1,
+  image_2,
+  image_3,
+  image_4,
 ];
 
 const Testimonials = () => {
