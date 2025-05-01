@@ -28,4 +28,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 
-setInterval(pingServer, 1 * 60 * 1000);
+setInterval(pingServer, 10 * 60 * 1000);
